@@ -1,6 +1,7 @@
 package com.example.companionapp.network
 
 import com.example.companionapp.models.GameModel
+import com.example.companionapp.models.GamesResponse
 import com.example.companionapp.models.StreamsResponse
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -17,7 +18,7 @@ interface TwitchApiService {
 
     @Headers("Client-ID: $clientId")
     @GET("games")
-    fun getGames(@Query("id") gameId: String): retrofit2.Call<GameModel>
+    fun getGames(@Query("id") gameIds: List<String>): retrofit2.Call<GamesResponse>
 
     companion object
     {

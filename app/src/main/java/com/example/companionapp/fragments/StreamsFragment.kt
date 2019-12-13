@@ -41,36 +41,41 @@ class StreamsFragment: Fragment() {
                 {
                     Log.i("StreamsFragment", response.body()?.toString() ?: "Null bpdy")
                     val streams = response.body()?.data
-                    streams?.forEach {
-                        it.gameId?.let {gameId ->
-                            TwitchApiService.endpoints.getGames(gameId).enqueue(object: retrofit2.Callback<GamesResponse>
-                            {
-                                override fun onFailure(call: retrofit2.Call<GamesResponse>, t: Throwable) {
-                                    Log.w("StreamsFragment", t)
-                                }
 
-                                override fun onResponse(call: retrofit2.Call<GamesResponse>, response: retrofit2.Response<GamesResponse>) {
-                                    if(response.isSuccessful)
-                                    {
-                                        val games = response.body()?.data
-                                        streams?.forEach {stream ->
-                                            games?.forEach {game ->
-                                                if(stream.gameId == game.id)
-                                                {
-                                                    stream.game = game
-                                                }
+                    //Get list of all gameId
+                    val ids = streams?.map { it.gameId ?: ""}
+
+                    ids?.let {ids ->
+                        TwitchApiService.endpoints.getGames(ids).enqueue(object: retrofit2.Callback<GamesResponse>
+                        {
+                            override fun onFailure(call: retrofit2.Call<GamesResponse>, t: Throwable) {
+                                Log.w("StreamsFragment", t)
+                            }
+
+                            override fun onResponse(call: retrofit2.Call<GamesResponse>, response: retrofit2.Response<GamesResponse>) {
+                                if(response.isSuccessful)
+                                {
+                                    val games = response.body()?.data
+                                    streams?.forEach {stream ->
+                                        games?.forEach {game ->
+                                            if(stream.gameId == game.id)
+                                            {
+                                                stream.game = game
                                             }
                                         }
-                                        Log.i("StreamsFragment", "Got games $games")
-                                        Log.i("StreamsFragment", "Got games $streams")
+                                    }
+                                    adapter.list = ArrayList(streams.map { it.game?.name ?: "" })
+                                    adapter.notifyDataSetChanged()
 
-                                    }
-                                    else{
-                                        Log.w("StreamsFragment", "Error getting games")
-                                    }
+                                    Log.i("StreamsFragment", "Got games $games")
+                                    Log.i("StreamsFragment", "Got games $streams")
+
                                 }
-                            })
-                        }
+                                else{
+                                    Log.w("StreamsFragment", "Error getting games")
+                                }
+                            }
+                        })
                     }
                 }
                 else
