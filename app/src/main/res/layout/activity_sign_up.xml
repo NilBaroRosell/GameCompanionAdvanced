@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_up_email_block"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/EmailHeight"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/emailText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailProfileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_up_username_block_text"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/UsernameHeight"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/usernameText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usrnameProfileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_up_password_block"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/PasswordHeight"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/passwordText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordProfileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/SignUpHeight"
+        android:layout_height="wrap_content"
+        android:text="@string/signUpText"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/signUpButtonColor"
+    />
+
+    </LinearLayout>

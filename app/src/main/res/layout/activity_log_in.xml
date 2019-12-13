@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/ActivityLogInPadding"
+    android:paddingRight="@dimen/ActivityLogInPadding"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/log_in_email_block"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/EmailHeight"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/emailText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logInEmailProfileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/log_in_password_block"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/PasswordHeight"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/passwordText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logInPasswordProfileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/LogInWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/logInText"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/logInButtonColor"
+        />
+</LinearLayout>

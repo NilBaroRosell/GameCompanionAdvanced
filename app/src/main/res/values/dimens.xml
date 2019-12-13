@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ProfilePictureMarginTop">200dp</dimen>
+    <dimen name="ProfilePictureSize">200dp</dimen>
+    <dimen name="LogOutWidth">300dp</dimen>
+    <dimen name="LogOutHeight">75dp</dimen>
+    <dimen name="LogOutMarginTop">100dp</dimen>
+    <dimen name="UsernameProfileWidth">300dp</dimen>
+    <dimen name="UsernameProfileHeight">48dp</dimen>
+    <dimen name="UsernameProfileMarginTop">75dp</dimen>
+    <dimen name="LogInWidth">300dp</dimen>
+    <dimen name="LogInMarginTop">30dp</dimen>
+    <dimen name="RegisterWidth">300dp</dimen>
+    <dimen name="RegisterMarginTop">-30dp</dimen>
+    <dimen name="MessageTextHeight">48dp</dimen>
+    <dimen name="EmailHeight">300dp</dimen>
+    <dimen name="UsernameHeight">300dp</dimen>
+    <dimen name="PasswordHeight">300dp</dimen>
+    <dimen name="SignUpHeight">300dp</dimen>
+    <dimen name="CardMargins">8dp</dimen>
+    <dimen name="CardHeight">96dp</dimen>
+    <dimen name="CardImageSize">75dp</dimen>
+    <dimen name="CardImageMarginTop">10dp</dimen>
+    <dimen name="CardImageMarginLeft">310dp</dimen>
+    <dimen name="CardTextSize">18dp</dimen>
+    <dimen name="CardTextMarginRight">120dp</dimen>
+    <dimen name="ActivityLogInPadding">16dp</dimen>
+</resources>

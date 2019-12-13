@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CompanionApp</string>
+    <string name="tab_home">News</string>
+    <string name="tab_chats">Chats</string>
+    <string name="tab_profile">Profile</string>
+
+    <string name="registerButton">Register here</string>
+    <string name="usernameText">Username</string>
+    <string name="passwordText">Password</string>
+    <string name="signUpText">Sign Up</string>
+    <string name="emailText">Email</string>
+    <string name="logInText">Log In</string>
+    <string name="LogOutText">Log Out</string>
+
+    <string name="enterMsg">Enter Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

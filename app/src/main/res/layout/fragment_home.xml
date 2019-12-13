@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--Este boton solo aparecera cuando no tenemos ningun usuario logeado-->
+    <Button
+        android:id="@+id/signUp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/RegisterMarginTop"
+        android:layout_width="@dimen/RegisterWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/registerButton"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/signUpButtonColor"
+        />
+
+    <!--Esto aparecera siempre y cuando tengamos un usuario logeado en la app-->
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/LogInMarginTop"
+        android:layout_width="@dimen/LogInWidth"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/signUpButtonColor"
+        android:text="@string/logInText"
+        android:textColor="@color/textColor" />
+
+    <ImageView
+        android:layout_marginBottom="@dimen/ProfilePictureMarginTop"
+        android:layout_gravity="center"
+        android:id="@+id/profileImg"
+        android:layout_width="@dimen/ProfilePictureSize"
+        android:layout_height="@dimen/ProfilePictureSize"
+        android:src="@drawable/ic_profile"
+        />
+
+    <TextView
+        android:layout_marginBottom="@dimen/UsernameProfileMarginTop"
+        android:layout_gravity="center"
+        android:id="@+id/usernameProfileTextView"
+        android:layout_width="@dimen/UsernameProfileWidth"
+        android:layout_height="@dimen/UsernameProfileHeight"
+        android:textColor="@color/blackTextColor"
+        />
+
+    <Button
+        android:id="@+id/logoutProfileButton"
+        android:layout_marginTop="@dimen/LogOutMarginTop"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/LogOutWidth"
+        android:layout_height="@dimen/LogOutHeight"
+        android:text="@string/LogOutText"
+        />
+
+
+
+</FrameLayout>

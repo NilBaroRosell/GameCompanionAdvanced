@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916102418193",
+    "firebase_url": "https://companionappniljuan.firebaseio.com",
+    "project_id": "companionappniljuan",
+    "storage_bucket": "companionappniljuan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916102418193:android:399b02e1ff22fc7f7986b0",
+        "android_client_info": {
+          "package_name": "com.JuanNil.CompanionAppProject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916102418193-nndtshldlcofqeu8c12trod0hf2esflu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbsmhto07LIiAlavkneL1zBR-LlkvEBS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916102418193-nndtshldlcofqeu8c12trod0hf2esflu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
